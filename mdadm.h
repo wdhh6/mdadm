@@ -643,7 +643,7 @@ struct map_ent {
 	char	*path;
 };
 extern int map_update(struct map_ent **mpp, char *devnm, char *metadata,
-		      int uuid[4], char *path);
+		      int *uuid, char *path);
 extern void map_remove(struct map_ent **map, char *devnm);
 extern struct map_ent *map_by_uuid(struct map_ent **map, int uuid[4]);
 extern struct map_ent *map_by_devnm(struct map_ent **map, char *devnm);
